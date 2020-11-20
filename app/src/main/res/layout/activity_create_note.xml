@@ -78,7 +78,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/inputNoteTitle" />
 
             <EditText
-                android:id="@+id/inputNoteSubTitle"
+                android:id="@+id/inputNoteSubtitle"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/_12sdp"
@@ -105,12 +105,12 @@
                 android:layout_height="0dp"
                 android:layout_marginStart="@dimen/_12sdp"
                 android:background="@drawable/background_subtitle_indicator"
-                app:layout_constraintBottom_toBottomOf="@id/inputNoteSubTitle"
+                app:layout_constraintBottom_toBottomOf="@id/inputNoteSubtitle"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@id/inputNoteSubTitle" />
+                app:layout_constraintTop_toTopOf="@id/inputNoteSubtitle" />
 
             <EditText
-                android:id="@+id/inputNote"
+                android:id="@+id/inputNoteText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/_12sdp"
@@ -129,7 +129,7 @@
                 android:textColorHint="@color/colorTextHint"
                 android:textSize="@dimen/_13ssp"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/inputNoteSubTitle" />
+                app:layout_constraintTop_toBottomOf="@id/inputNoteSubtitle" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
