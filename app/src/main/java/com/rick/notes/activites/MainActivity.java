@@ -1,11 +1,13 @@
-package com.rick.notes;
+package com.rick.notes.activites;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.ImageView;
+
+import com.rick.notes.R;
+import com.rick.notes.activites.CreateNoteActivity;
 
 public class MainActivity extends AppCompatActivity {
 
