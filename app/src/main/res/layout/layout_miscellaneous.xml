@@ -137,6 +137,31 @@
             android:text="Pick Color"
             android:textColor="@color/colorWhiteTextColor"
             android:textSize="@dimen/_13ssp" />
+    </LinearLayout>
 
+    <LinearLayout
+        android:id="@+id/layoutAddImage"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_margin="@dimen/_10sdp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/_22sdp"
+            android:layout_height="@dimen/_22sdp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_image"
+            app:tint="@color/colorIcons" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:fontFamily="@font/ubuntu_medium"
+            android:includeFontPadding="false"
+            android:text="Add Image"
+            android:textColor="@color/colorIcons"
+            android:textSize="@dimen/_12ssp" />
     </LinearLayout>
 </LinearLayout>
