@@ -60,6 +60,7 @@ public class CreateNoteActivity extends AppCompatActivity {
 
     private AlertDialog dialogAddURL;
 
+    private Note alreadyAvailableNote;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -88,8 +89,33 @@ public class CreateNoteActivity extends AppCompatActivity {
         selectedNoteColor = "#333333";
         selectedImagePath = "";
 
+        if (getIntent().getBooleanExtra("isViewOrUpdate", false)) {
+            alreadyAvailableNote = (Note) getIntent().getSerializableExtra("note");
+            setViewOrUpdateNote();
+        }
+
         initMiscellaneous();
         setSubtitleIndicatorColor();
+    }
+
+    private void setViewOrUpdateNote() {
+        inputNoteTitle.setText(alreadyAvailableNote.getTitle());
+        inputNoteSubtitle.setText(alreadyAvailableNote.getSubtitle());
+        inputNoteText.setText(alreadyAvailableNote.getNoteText());
+        textDateTime.setText(alreadyAvailableNote.getDateTime());
+
+        final String imagePathStr = alreadyAvailableNote.getImagePath();
+        if (imagePathStr != null && !imagePathStr.trim().isEmpty()) {
+            imageNote.setImageBitmap(BitmapFactory.decodeFile(imagePathStr));
+            imageNote.setVisibility(View.VISIBLE);
+            selectedImagePath = imagePathStr;
+        }
+
+        final String webLinkStr = alreadyAvailableNote.getWebLink();
+        if (webLinkStr != null && !webLinkStr.trim().isEmpty()) {
+            textWebURL.setText(alreadyAvailableNote.getWebLink());
+            layoutWebURL.setVisibility(View.VISIBLE);
+        }
     }
 
     private void saveNote() {
@@ -116,6 +142,10 @@ public class CreateNoteActivity extends AppCompatActivity {
 
         if (layoutWebURL.getVisibility() == View.VISIBLE) {
             note.setWebLink(textWebURL.getText().toString());
+        }
+
+        if (alreadyAvailableNote != null) {
+            note.setId(alreadyAvailableNote.getId());
         }
 
         @SuppressLint("StaticFieldLeak")
@@ -204,6 +234,26 @@ public class CreateNoteActivity extends AppCompatActivity {
             imageColor5.setImageResource(R.drawable.ic_done);
             setSubtitleIndicatorColor();
         });
+
+        if (alreadyAvailableNote != null) {
+            final String noteColorCode = alreadyAvailableNote.getColor();
+            if (noteColorCode != null && !noteColorCode.trim().isEmpty()) {
+                switch (noteColorCode) {
+                    case "#FDBE3B":
+                        layoutMiscellaneous.findViewById(R.id.viewColor2).performClick();
+                        break;
+                    case "#FF4842":
+                        layoutMiscellaneous.findViewById(R.id.viewColor3).performClick();
+                        break;
+                    case "#3A52FC":
+                        layoutMiscellaneous.findViewById(R.id.viewColor4).performClick();
+                        break;
+                    case "#000000":
+                        layoutMiscellaneous.findViewById(R.id.viewColor5).performClick();
+                        break;
+                }
+            }
+        }
 
         layoutMiscellaneous.findViewById(R.id.layoutAddImage).setOnClickListener(v -> {
             bottomSheetBehavior.setState(BottomSheetBehavior.STATE_COLLAPSED);
