@@ -57,4 +57,7 @@ dependencies {
 
     // https://github.com/vinc3m1/RoundedImageView
     implementation 'com.makeramen:roundedimageview:2.3.0'
+
+    // https://github.com/square/picasso
+    implementation 'com.squareup.picasso:picasso:2.71828'
 }

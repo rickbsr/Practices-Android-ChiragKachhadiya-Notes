@@ -36,6 +36,7 @@ import com.google.android.material.bottomsheet.BottomSheetBehavior;
 import com.rick.notes.R;
 import com.rick.notes.database.NotesDatabase;
 import com.rick.notes.entities.Note;
+import com.squareup.picasso.Picasso;
 
 import java.io.InputStream;
 import java.text.SimpleDateFormat;
@@ -371,9 +372,14 @@ public class CreateNoteActivity extends AppCompatActivity {
                 Uri selectedImageUri = data.getData();
                 if (selectedImageUri != null) {
                     try {
-                        InputStream inputStream = getContentResolver().openInputStream(selectedImageUri);
-                        Bitmap bitmap = BitmapFactory.decodeStream(inputStream);
-                        imageNote.setImageBitmap(bitmap);
+//                        InputStream inputStream = getContentResolver().openInputStream(selectedImageUri);
+//                        Bitmap bitmap = BitmapFactory.decodeStream(inputStream);
+//                        imageNote.setImageBitmap(bitmap);
+
+                        Picasso.get()
+                                .load(selectedImageUri)
+                                .into(imageNote);
+
                         imageNote.setVisibility(View.VISIBLE);
                         findViewById(R.id.imageRemoveImage).setVisibility(View.VISIBLE);
 
