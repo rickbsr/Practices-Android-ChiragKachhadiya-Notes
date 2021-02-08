@@ -16,7 +16,7 @@
         android:layout_marginEnd="@dimen/_12sdp"
         android:fontFamily="@font/ubuntu_bold"
         android:includeFontPadding="false"
-        android:text="My Notes"
+        android:text="@string/activity_main_text_my_note_text"
         android:textColor="@color/white"
         android:textSize="@dimen/_20ssp"
         app:layout_constraintTop_toTopOf="parent" />
@@ -49,7 +49,7 @@
             android:layout_marginStart="@dimen/_12sdp"
             android:background="@null"
             android:fontFamily="@font/ubuntu_regular"
-            android:hint="Search notes"
+            android:hint="@string/activity_main_input_search_hint"
             android:imeOptions="actionDone"
             android:importantForAutofill="no"
             android:inputType="text"

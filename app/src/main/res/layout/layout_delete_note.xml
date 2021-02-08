@@ -21,13 +21,14 @@
         app:tint="@color/colorWhiteTextColor" />
 
     <TextView
+        android:id="@+id/textDeleteNoteTitle"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/_8sdp"
         android:layout_marginEnd="@dimen/_8sdp"
         android:fontFamily="@font/ubuntu_bold"
         android:includeFontPadding="false"
-        android:text="Delete Note"
+        android:text="@string/layout_delete_note_text_delete_note_title_text"
         android:textColor="@color/colorWhiteTextColor"
         android:textSize="@dimen/_14ssp"
         app:layout_constraintBottom_toBottomOf="@id/imageDeleteNote"
@@ -47,7 +48,7 @@
         android:includeFontPadding="false"
         android:paddingStart="@dimen/_8sdp"
         android:paddingEnd="@dimen/_8sdp"
-        android:text="Are you sure want to delete this note?"
+        android:text="@string/layout_delete_note_text_delete_note_message_text"
         android:textColor="@color/colorWhiteTextColor"
         android:textSize="@dimen/_13ssp"
         app:layout_constraintTop_toBottomOf="@id/imageDeleteNote" />
@@ -62,7 +63,7 @@
         android:fontFamily="@font/ubuntu_medium"
         android:includeFontPadding="false"
         android:padding="@dimen/_8sdp"
-        android:text="DELETE NOTE"
+        android:text="@string/layout_delete_note_text_delete_note_text"
         android:textAllCaps="true"
         android:textColor="@color/colorDelete"
         android:textSize="@dimen/_13ssp"
@@ -80,7 +81,7 @@
         android:fontFamily="@font/ubuntu_medium"
         android:includeFontPadding="false"
         android:padding="@dimen/_8sdp"
-        android:text="CANCEL"
+        android:text="@string/layout_delete_note_text_cancel_text"
         android:textColor="@color/colorAccent"
         android:textSize="@dimen/_13ssp"
         app:layout_constraintBottom_toBottomOf="parent"

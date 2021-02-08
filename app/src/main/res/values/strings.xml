@@ -1,3 +1,21 @@
 <resources>
     <string name="app_name">Notes</string>
+    <string name="activity_create_note_input_note_title_hint">Note Title</string>
+    <string name="activity_create_note_input_note_subtitle_hint">note_subtitle</string>
+    <string name="activity_create_note_input_note_text_hint">Type note here..</string>
+    <string name="activity_main_text_my_note_text">My Notes</string>
+    <string name="activity_main_input_search_hint">Search notes</string>
+    <string name="layout_add_url_text_add_url_title_text">Add URL</string>
+    <string name="layout_add_url_input_url_hint">Enter URL</string>
+    <string name="layout_add_url_text_add_text">ADD</string>
+    <string name="layout_add_url_text_cancel_text">CANCEL</string>
+    <string name="layout_delete_note_text_delete_note_title_text">Delete Note</string>
+    <string name="layout_delete_note_text_delete_note_message_text">Are you sure want to delete this note?</string>
+    <string name="layout_delete_note_text_delete_note_text">DELETE NOTE</string>
+    <string name="layout_delete_note_text_cancel_text">CANCEL</string>
+    <string name="layout_miscellaneous_text_miscellaneous_text">Miscellaneous</string>
+    <string name="layout_miscellaneous_text_pick_color_text">Pick Color</string>
+    <string name="layout_miscellaneous_text_add_image_text">Add Image</string>
+    <string name="layout_miscellaneous_text_add_url_text">Add URL</string>
+    <string name="layout_miscellaneous_text_delete_note_text">Delete Note</string>
 </resources>

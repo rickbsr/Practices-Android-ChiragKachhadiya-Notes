@@ -17,7 +17,7 @@
         android:fontFamily="@font/ubuntu_medium"
         android:gravity="center"
         android:includeFontPadding="false"
-        android:text="Miscellaneous"
+        android:text="@string/layout_miscellaneous_text_miscellaneous_text"
         android:textColor="@color/colorWhiteTextColor"
         android:textSize="@dimen/_13ssp" />
 
@@ -131,11 +131,12 @@
         </FrameLayout>
 
         <TextView
+            android:id="@+id/textPickColor"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/ubuntu_medium"
             android:includeFontPadding="false"
-            android:text="Pick Color"
+            android:text="@string/layout_miscellaneous_text_pick_color_text"
             android:textColor="@color/colorWhiteTextColor"
             android:textSize="@dimen/_13ssp" />
     </LinearLayout>
@@ -146,7 +147,8 @@
         android:layout_height="@dimen/_35sdp"
         android:layout_margin="@dimen/_10sdp"
         android:gravity="center_vertical"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        tools:ignore="UseCompoundDrawables">
 
         <ImageView
             android:layout_width="@dimen/_22sdp"
@@ -156,12 +158,13 @@
             app:tint="@color/colorIcons" />
 
         <TextView
+            android:id="@+id/textAddImage"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/_10sdp"
             android:fontFamily="@font/ubuntu_medium"
             android:includeFontPadding="false"
-            android:text="Add Image"
+            android:text="@string/layout_miscellaneous_text_add_image_text"
             android:textColor="@color/colorIcons"
             android:textSize="@dimen/_12ssp" />
     </LinearLayout>
@@ -174,7 +177,8 @@
         android:layout_marginEnd="@dimen/_10sdp"
         android:layout_marginBottom="@dimen/_10sdp"
         android:gravity="center_vertical"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        tools:ignore="UseCompoundDrawables">
 
         <ImageView
             android:layout_width="@dimen/_22sdp"
@@ -184,12 +188,13 @@
             app:tint="@color/colorIcons" />
 
         <TextView
+            android:id="@+id/textAddURL"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/_10sdp"
             android:fontFamily="@font/ubuntu_medium"
             android:includeFontPadding="false"
-            android:text="Add URL"
+            android:text="@string/layout_miscellaneous_text_add_url_text"
             android:textColor="@color/colorIcons"
             android:textSize="@dimen/_12ssp" />
     </LinearLayout>
@@ -214,12 +219,13 @@
             app:tint="@color/colorDelete" />
 
         <TextView
+            android:id="@+id/textDeleteNote"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/_10sdp"
             android:fontFamily="@font/ubuntu_medium"
             android:includeFontPadding="false"
-            android:text="Delete Note"
+            android:text="@string/layout_miscellaneous_text_delete_note_text"
             android:textColor="@color/colorDelete"
             android:textSize="@dimen/_12ssp" />
 
