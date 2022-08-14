@@ -3,7 +3,7 @@ Practices Series：Android
 
 ---
 
-![](pics/practices-mvvmsnake.png)
+![](pics/practices-notes.png)
 
 ---
 
