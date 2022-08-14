@@ -1,15 +1,17 @@
-# Practices_Android_ChiragKachhadiya_Notes
-Practices：ChiragKachhadiya_Notes
+# ChiragKachhadiya Notes
+Practices Series：Android
 
-***
-#### 項目 ####
-
-ChiragKachhadiya Notes
 ---
 
-#### 簡介 ####
+![](pics/practices-mvvmsnake.png)
+
+---
+
+### 說明 ###
 
 本專案為「[Chirag Kachhadiya](https://www.youtube.com/channel/UCmL5TAblHHgh1xhabmPjYgw)」分享於「Youtube」平台。
+
+###### 參考連結： ######
 
 - [Android Development | Notes App | Tutorial #1 | Primary Layout Design | Android Studio](https://www.youtube.com/watch?v=hlkekoPqsis&list=PLam6bY5NszYN6-a1wt7yRISWfmYPdkbMu)
 - [Android Development | Notes App | Tutorial #2 | Database Setup | Room Persistence Library](https://www.youtube.com/watch?v=CeqTvDfN6NM&list=PLam6bY5NszYN6-a1wt7yRISWfmYPdkbMu&index=2)
@@ -24,18 +26,11 @@ ChiragKachhadiya Notes
 - [Android Development | Notes App | Tutorial #11 | Search Notes | Android Studio](https://www.youtube.com/watch?v=fsDsDrOehnA&list=PLam6bY5NszYN6-a1wt7yRISWfmYPdkbMu&index=11)
 - [Android Development | Notes App | Tutorial #12 | Quick Actions | Android Studio](https://www.youtube.com/watch?v=UjNMCtXGyNo&list=PLam6bY5NszYN6-a1wt7yRISWfmYPdkbMu&index=12)
 
-<br>
-
-```
-Practiecs! Without unceasing practice nothing can be done.
-```
-
-<br>
+---
 
 #### 預覽圖 ####
 
-<img src="./previews/notes.gif" alt="notes" title="preview" width="22%" align="left" />
-<img src="./previews/overview.png" alt="notes" title="preview" width="22%" align="left" />
-<img src="./previews/picture.png" alt="notes" title="preview" width="22%" align="left" />
-<img src="./previews/url.png" alt="notes" title="preview" width="22%" align="left" />
 
+|     動態預覽圖      |          總覽          |         圖片          |        Url        |
+|:-------------------:|:----------------------:|:---------------------:|:-----------------:|
+| ![](pics/notes.gif) | ![](pics/overview.png) | ![](pics/picture.png) | ![](pics/url.png) |
