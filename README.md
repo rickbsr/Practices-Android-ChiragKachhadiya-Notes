@@ -34,3 +34,7 @@ Practices Series：Android
 |     動態預覽圖      |          總覽          |         圖片          |        Url        |
 |:-------------------:|:----------------------:|:---------------------:|:-----------------:|
 | ![](pics/notes.gif) | ![](pics/overview.png) | ![](pics/picture.png) | ![](pics/url.png) |
+
+---
+
+###### tags: `Practices` `Android` `Java`
