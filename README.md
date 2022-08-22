@@ -1,5 +1,5 @@
 # ChiragKachhadiya Notes
-Practices Series：Android
+Practices Series：Android App
 
 ---
 
