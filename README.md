@@ -37,4 +37,4 @@ Practices Series：Android
 
 ---
 
-###### tags: `Practices` `Android` `Java`
+###### tags: `Android` `Java`
