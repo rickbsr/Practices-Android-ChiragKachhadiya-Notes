@@ -1,5 +1,5 @@
 # ChiragKachhadiya Notes
-項目實戰（Android）：ChiragKachhadiya Notes
+實戰系列（Android）：ChiragKachhadiya Notes
 
 ---
 
